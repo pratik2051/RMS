@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Costomer</title>
+<link rel="stylesheet"
+ href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+		<div class="card-header bg-primary fs-2 text-center text-white  ">Employee Form</div>
+	    <div class="card-body">
+			<form action="/employee" method="post">
+			<div class="row py-2">
+				<div class="col-4">FirstName</div>
+				<div class="col-6"><input TYPE="TEXT" name="fname" class="form-control"></div>
+			</div>
+			<div class="row py-2">
+				<div class="col-4">LastName</div>
+				<div class="col-6"><input TYPE="TEXT" name="lname" class="form-control"></div>
+			</div>
+			<div class="row py-2">
+				<div class="col-4">Gender</div>
+				<div class="col-6">
+					<input TYPE="radio" name="gender" value="male">Male
+					<input TYPE="radio" name="gender" value="female">Female
+					<input TYPE="radio" name="gender" value="non">Non
+				
+				</div>
+				<div class="row py-2">
+				<div class="col-4">DOB</div>
+				<div class="col-6"><input TYPE="date" name="dob" class="form-control"></div>
+			</div>
+			<div class="row py-2">
+				<div class="col-4">JoinDate</div>
+				<div class="col-6"><input TYPE="date" name="Joindate" class="form-control"></div>
+			</div>
+			<div class="row py-2">
+				<div class="col-4">Department</div>
+				<div class="col-6"><input TYPE="TEXT" name="department" class="form-control"></div>
+			</div>
+			<div class="row py-2">
+				<div class="col-4">Post</div>
+				<div class="col-6"><input TYPE="TEXT" name="post" class="form-control"></div>
+			</div>
+			<div class="row py-2">
+				<div class="col-4">Email</div>
+				<div class="col-6"><input TYPE="TEXT" name="email" class="form-control"></div>
+			</div>
+			<div class="row py-2">
+				<div class="col-4">Address</div>
+				<div class="col-6"><input TYPE="TEXT" name="address" class="form-control"></div>
+			</div>
+			<div class="row py-2">
+				<div class="col-4">State</div>
+				<div class="col-6">
+					<select class="form-control" name="address.state" >
+						<option value="">-----------select state-----------</option>
+						<option value="">state 1</option>
+						<option value="">state 2</option>
+						<option value="">state 3</option>
+						<option value="">state 4</option>
+						</select>
+					</div>
+			</div>
+			<div class="row py-3">
+				<div class="col-4"></div>
+				<div class="col-6"><input TYPE="submit" value="Add" class="btn btn-primary"></div>
+				</form>
+			</div>
+			</div>
+		</div>		
+	    <div class="card-footer bg-info text-center text-yellow">Copyright@2023</div>
+	
+			
+		</div>
+	</div>
+
+
+</body>
+</html>

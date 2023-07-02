@@ -1,0 +1,13 @@
+@charset "UTF-8";
+h2 {
+	font-family :sans-serif;
+	font-size:1.5em;
+	text-transformation: uppercase;
+}
+strong {
+	font-weight:700;
+	background-color: yellow;
+}
+	p{
+	font-family: sans-serif;
+}
