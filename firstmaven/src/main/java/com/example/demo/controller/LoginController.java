@@ -18,7 +18,7 @@ public class LoginController {
 	@Autowired 
 	private UserRepository userRepo;
 	
-	@GetMapping("/")
+	@GetMapping("/login")
 	public String showLogin() {
 		return "loginForm";
 		
