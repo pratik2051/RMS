@@ -9,7 +9,7 @@ import
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.example.demo.model.catagory;
+import com.example.demo.model.Catagory;
 import com.example.demo.repository.FoodRepository;
   
  @Controller public class foodscontroller {
@@ -17,19 +17,19 @@ import com.example.demo.repository.FoodRepository;
 	 @Autowired
   private FoodRepository fooRepos;
   
-  @GetMapping("/addcatagory")
-  public String addcatagory() { 
-	  return"addcatagory"; }
+  @GetMapping("/addCatagory")
+  public String addCatagory() {
+	  return"addCatagory"; }
   
-  @PostMapping("/addcatagory")
-  public String SaveCatagory(@ModelAttribute catagory cat) {
+  @PostMapping("/addCatagory")
+  public String SaveCatagory(@ModelAttribute Catagory cat) {
 	  fooRepos.save(cat);
-  return"catagories";
+  return"Catagories";
   }
   @GetMapping("/catlist")
   public String getallcatagories(Model model) {
 	  model.addAttribute("adcatlist", fooRepos.findAll());
-	  return"catagories";
+	  return"Catagories";
   }
   
  

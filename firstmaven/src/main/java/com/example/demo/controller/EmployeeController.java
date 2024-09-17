@@ -8,8 +8,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.example.demo.model.Employee;
 import com.example.demo.repository.EmployeeRepository;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class EmployeeController {
 	@Autowired
 	private EmployeeRepository employeerepo;
